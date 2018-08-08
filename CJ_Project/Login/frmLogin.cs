@@ -25,5 +25,13 @@ namespace Login
             t.ShowDialog();
             this.Close();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmFormulario t = new frmFormulario();
+            t.ShowDialog();
+            this.Close();
+        }
     }
 }
