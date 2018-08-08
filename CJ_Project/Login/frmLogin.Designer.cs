@@ -1,6 +1,6 @@
 ﻿namespace Login
 {
-    partial class Login
+    partial class frmLogin
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -28,9 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLogin));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.btnTickets = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -48,18 +49,29 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(110, 209);
+            this.button1.Location = new System.Drawing.Point(101, 176);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(482, 108);
             this.button1.TabIndex = 23;
             this.button1.Text = "Formulario";
             this.button1.UseVisualStyleBackColor = true;
             // 
+            // btnTickets
+            // 
+            this.btnTickets.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTickets.Location = new System.Drawing.Point(450, 405);
+            this.btnTickets.Name = "btnTickets";
+            this.btnTickets.Size = new System.Drawing.Size(222, 44);
+            this.btnTickets.TabIndex = 24;
+            this.btnTickets.Text = "Tickets";
+            this.btnTickets.UseVisualStyleBackColor = true;
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(683, 403);
+            this.ClientSize = new System.Drawing.Size(684, 461);
+            this.Controls.Add(this.btnTickets);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Login";
@@ -73,6 +85,7 @@
 
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnTickets;
     }
 }
 
