@@ -23,7 +23,9 @@ namespace Tickets
 
         private void frmTickets_Load(object sender, EventArgs e)
         {
-
+            dgvSolicitudes.Rows[dgvSolicitudes.Rows.Add()].Cells[0].Value = "Juan Perez";
+            dgvSolicitudes.Rows[0].Cells[1].Value = "";
+            leerCorreos();
         }
         private void leerCorreos()
         {
@@ -42,21 +44,27 @@ namespace Tickets
             oServer.Port = 993;
             try
             {
+                string json;
+                int contador = 0;
                 oClient.Connect(oServer);
                 MailInfo[] infos = oClient.GetMailInfos();
                 for (int i = 0; i < infos.Length; i++)
                 {
                     MailInfo info = infos[i];
                     Mail oMail = oClient.GetMail(info);
+                    
                     if (!info.Read)
                     {
                         dgvSolicitudes.Rows[dgvSolicitudes.Rows.Add()].Cells[0].Value = oMail.TextBody;
-                        dgvSolicitudes.Rows[i].Cells[1].Value = oMail.ReceivedDate;
-                        string json = oMail.TextBody;
+                        dgvSolicitudes.Rows[contador].Cells[1].Value = oMail.ReceivedDate;
+                        dgvSolicitudes.Rows[contador].Cells[3].Value = false;
+
+                        json = oMail.TextBody.ToString() ;
                         MessageBox.Show(json);
                         Formu jsonObj = new Formu();
                         jsonObj = JsonConvert.DeserializeObject<Formu>(json);
                         MessageBox.Show(jsonObj.NombreCompleto);
+                        contador++;
                     }
                     // Download email from GMail IMAP4 server
                     //string json = oMail.TextBody;
@@ -72,6 +80,30 @@ namespace Tickets
             {
                 Console.WriteLine(ep.Message);
                 Console.Read();
+            }
+        }
+
+        private void frmTickets_FormClosing(object sender, FormClosingEventArgs e)
+        {            
+           //DialogResult dr =  MessageBox.Show("¿Desea salir?", "Salir",MessageBoxButtons.YesNo);
+           // if (DialogResult.No == dr)
+           // {
+           //     e.Cancel = true;
+           // }
+            
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            dgvSolicitudes.Rows.Clear();
+            leerCorreos();
+        }
+
+        private void dgvSolicitudes_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if ()
+            {
+
             }
         }
     }

@@ -106,6 +106,15 @@ namespace Formulario
                 MessageBox.Show(ex.ToString());
             }
         }
+
+        private void frmFormulario_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            DialogResult dr = MessageBox.Show("¿Desea salir?", "Salir", MessageBoxButtons.YesNo);
+            if (dr.ToString().Equals("Yes"))
+            {
+                this.Close();
+            }
+        }
     }
 }
   

@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmFormulario));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.sig = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.labelFecha1 = new System.Windows.Forms.Label();
@@ -220,7 +221,6 @@
             this.label78 = new System.Windows.Forms.Label();
             this.txtSegundoAF2 = new System.Windows.Forms.TextBox();
             this.tabPage6 = new System.Windows.Forms.TabPage();
-            this.sig = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -305,6 +305,16 @@
             this.tabPage1.Size = new System.Drawing.Size(935, 839);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "DATOS DEL SOLICITANTE";
+            // 
+            // sig
+            // 
+            this.sig.Location = new System.Drawing.Point(837, 584);
+            this.sig.Name = "sig";
+            this.sig.Size = new System.Drawing.Size(75, 23);
+            this.sig.TabIndex = 83;
+            this.sig.Text = "button5";
+            this.sig.UseVisualStyleBackColor = true;
+            this.sig.Click += new System.EventHandler(this.sig_Click);
             // 
             // button4
             // 
@@ -2300,16 +2310,6 @@
             this.tabPage6.Text = "CONFIRMACIÓN DEL TRÁMITE";
             this.tabPage6.UseVisualStyleBackColor = true;
             // 
-            // sig
-            // 
-            this.sig.Location = new System.Drawing.Point(837, 584);
-            this.sig.Name = "sig";
-            this.sig.Size = new System.Drawing.Size(75, 23);
-            this.sig.TabIndex = 83;
-            this.sig.Text = "button5";
-            this.sig.UseVisualStyleBackColor = true;
-            this.sig.Click += new System.EventHandler(this.sig_Click);
-            // 
             // frmFormulario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2318,6 +2318,7 @@
             this.Controls.Add(this.tabControl1);
             this.Name = "frmFormulario";
             this.Text = "Form1";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmFormulario_FormClosing);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
