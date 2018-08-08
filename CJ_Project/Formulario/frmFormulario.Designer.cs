@@ -220,6 +220,7 @@
             this.label78 = new System.Windows.Forms.Label();
             this.txtSegundoAF2 = new System.Windows.Forms.TextBox();
             this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.sig = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -250,6 +251,7 @@
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.tabPage1.Controls.Add(this.sig);
             this.tabPage1.Controls.Add(this.button4);
             this.tabPage1.Controls.Add(this.button3);
             this.tabPage1.Controls.Add(this.labelFecha1);
@@ -2298,13 +2300,23 @@
             this.tabPage6.Text = "CONFIRMACIÓN DEL TRÁMITE";
             this.tabPage6.UseVisualStyleBackColor = true;
             // 
-            // Form1
+            // sig
+            // 
+            this.sig.Location = new System.Drawing.Point(837, 584);
+            this.sig.Name = "sig";
+            this.sig.Size = new System.Drawing.Size(75, 23);
+            this.sig.TabIndex = 83;
+            this.sig.Text = "button5";
+            this.sig.UseVisualStyleBackColor = true;
+            this.sig.Click += new System.EventHandler(this.sig_Click);
+            // 
+            // frmFormulario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(939, 858);
             this.Controls.Add(this.tabControl1);
-            this.Name = "Form1";
+            this.Name = "frmFormulario";
             this.Text = "Form1";
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
@@ -2519,6 +2531,7 @@
         private System.Windows.Forms.Label label78;
         private System.Windows.Forms.TextBox txtSegundoAF2;
         private System.Windows.Forms.TabPage tabPage6;
+        private System.Windows.Forms.Button sig;
     }
 }
 
