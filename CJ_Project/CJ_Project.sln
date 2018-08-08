@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Login", "Login\Login.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tickets", "Tickets\Tickets.csproj", "{417EF8A9-C650-4599-BBDF-B774F60E88CD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Formulario", "Formulario\Formulario.csproj", "{6046447E-228C-4257-A313-325F3286ADFE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{417EF8A9-C650-4599-BBDF-B774F60E88CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{417EF8A9-C650-4599-BBDF-B774F60E88CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{417EF8A9-C650-4599-BBDF-B774F60E88CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6046447E-228C-4257-A313-325F3286ADFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6046447E-228C-4257-A313-325F3286ADFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6046447E-228C-4257-A313-325F3286ADFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6046447E-228C-4257-A313-325F3286ADFE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
