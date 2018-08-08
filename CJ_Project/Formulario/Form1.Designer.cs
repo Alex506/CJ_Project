@@ -491,7 +491,6 @@
             this.btnSiguiente.TabIndex = 63;
             this.btnSiguiente.Text = "Siguiente";
             this.btnSiguiente.UseVisualStyleBackColor = false;
-            this.btnSiguiente.Click += new System.EventHandler(this.btnSiguiente_Click_1);
             // 
             // panel3
             // 
