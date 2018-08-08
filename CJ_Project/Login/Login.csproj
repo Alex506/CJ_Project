@@ -78,5 +78,15 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Formulario\Formulario.csproj">
+      <Project>{6046447e-228c-4257-a313-325f3286adfe}</Project>
+      <Name>Formulario</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tickets\Tickets.csproj">
+      <Project>{417ef8a9-c650-4599-bbdf-b774f60e88cd}</Project>
+      <Name>Tickets</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

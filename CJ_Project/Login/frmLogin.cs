@@ -7,7 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using Formulario;
+using Tickets;
 namespace Login
 {
     public partial class frmLogin : Form
@@ -15,6 +16,14 @@ namespace Login
         public frmLogin()
         {
             InitializeComponent();
+        }
+
+        private void btnTickets_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmTickets t = new frmTickets();
+            t.ShowDialog();
+            this.Close();
         }
     }
 }

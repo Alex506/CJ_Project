@@ -100,6 +100,7 @@
             this.Controls.Add(this.dgvSolicitudes);
             this.Controls.Add(this.pictureBox1);
             this.Name = "frmTickets";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.frmTickets_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
