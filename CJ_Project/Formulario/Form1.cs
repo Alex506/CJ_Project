@@ -12,9 +12,10 @@ namespace Formulario
 {
     public partial class Form1 : Form
     {
+        Formu info = new Formu();
         public Form1()
         {
-            Formu info = new Formu();
+           
             InitializeComponent();
         }
 
