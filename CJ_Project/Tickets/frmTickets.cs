@@ -25,7 +25,7 @@ namespace Tickets
         {
             dgvSolicitudes.Rows[dgvSolicitudes.Rows.Add()].Cells[0].Value = "Juan Perez";
             dgvSolicitudes.Rows[0].Cells[1].Value = "";
-            leerCorreos();
+            //leerCorreos();
         }
         private void leerCorreos()
         {
@@ -89,8 +89,7 @@ namespace Tickets
            // if (DialogResult.No == dr)
            // {
            //     e.Cancel = true;
-           // }
-            
+           // }            
         }
 
         private void button1_Click(object sender, EventArgs e)
