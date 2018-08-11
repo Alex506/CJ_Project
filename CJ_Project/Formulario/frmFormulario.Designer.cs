@@ -2317,7 +2317,7 @@
             this.ClientSize = new System.Drawing.Size(939, 858);
             this.Controls.Add(this.tabControl1);
             this.Name = "frmFormulario";
-            this.Text = "Form1";
+            this.Text = "Formulario";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmFormulario_FormClosing);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);

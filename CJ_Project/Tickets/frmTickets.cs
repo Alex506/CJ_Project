@@ -23,9 +23,19 @@ namespace Tickets
 
         private void frmTickets_Load(object sender, EventArgs e)
         {
-            dgvSolicitudes.Rows[dgvSolicitudes.Rows.Add()].Cells[0].Value = "Juan Perez";
-            dgvSolicitudes.Rows[0].Cells[1].Value = "";
-            //leerCorreos();
+            //dgvSolicitudes.Rows[dgvSolicitudes.Rows.Add()].Cells[0].Value = "Juan Perez";
+            //dgvSolicitudes.Rows[0].Cells[1].Value = "02/07/2018";
+            //dgvSolicitudes.Rows[dgvSolicitudes.Rows.Add()].Cells[0].Value = "Diana Gomez";
+            //dgvSolicitudes.Rows[1].Cells[1].Value = "15/07/2018";
+            //dgvSolicitudes.Rows[dgvSolicitudes.Rows.Add()].Cells[0].Value = "Raquel Garcia";
+            //dgvSolicitudes.Rows[2].Cells[1].Value = "30/08/2018";
+            //dgvSolicitudes.Rows[dgvSolicitudes.Rows.Add()].Cells[0].Value = "Pedro Alfaro";
+            //dgvSolicitudes.Rows[3].Cells[1].Value = "05/08/2018";
+            //dgvSolicitudes.Rows[dgvSolicitudes.Rows.Add()].Cells[0].Value = "Valeria Salas";
+            //dgvSolicitudes.Rows[4].Cells[1].Value = "09/08/2018";
+
+
+            leerCorreos();
         }
         private void leerCorreos()
         {
@@ -45,41 +55,31 @@ namespace Tickets
             try
             {
                 string json;
-                int contador = 0;
+
                 oClient.Connect(oServer);
                 MailInfo[] infos = oClient.GetMailInfos();
                 for (int i = 0; i < infos.Length; i++)
                 {
+                    int contador = 0;
                     MailInfo info = infos[i];
                     Mail oMail = oClient.GetMail(info);
-                    
                     if (!info.Read)
                     {
-                        dgvSolicitudes.Rows[dgvSolicitudes.Rows.Add()].Cells[0].Value = oMail.TextBody;
-                        dgvSolicitudes.Rows[contador].Cells[1].Value = oMail.ReceivedDate;
+                        json = oMail.TextBody;
+                        Formu jsonO = new Formu();
+                        jsonO = JsonConvert.DeserializeObject<Formu>(json);
+                        MessageBox.Show(jsonO.NombreCompleto);
+                        dgvSolicitudes.Rows[dgvSolicitudes.Rows.Add()].Cells[0].Value = jsonO.NombreCompleto;
+                        dgvSolicitudes.Rows[contador].Cells[1].Value = oMail.ReceivedDate.ToShortDateString();
                         dgvSolicitudes.Rows[contador].Cells[3].Value = false;
-
-                        json = oMail.TextBody.ToString() ;
-                        MessageBox.Show(json);
-                        Formu jsonObj = new Formu();
-                        jsonObj = JsonConvert.DeserializeObject<Formu>(json);
-                        MessageBox.Show(jsonObj.NombreCompleto);
                         contador++;
-                    }
-                    // Download email from GMail IMAP4 server
-                    //string json = oMail.TextBody;
-                    //MessageBox.Show(json);
-                    //InfoForm JsonObj = new InfoForm();
-                    //JsonObj = JsonConvert.DeserializeObject<InfoForm>(json);
-                }
-                // Quit and purge emails marked as deleted from Gmail IMAP4 server.
+                    }                                                         
+                }              
                 oClient.Quit();
-                Console.Read();
             }
             catch (Exception ep)
             {
-                Console.WriteLine(ep.Message);
-                Console.Read();
+                MessageBox.Show(ep.ToString());
             }
         }
 
@@ -95,15 +95,11 @@ namespace Tickets
         private void button1_Click(object sender, EventArgs e)
         {
             dgvSolicitudes.Rows.Clear();
-            leerCorreos();
+            //leerCorreos();
         }
 
         private void dgvSolicitudes_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            if ()
-            {
-
-            }
+        {     
         }
     }
 }

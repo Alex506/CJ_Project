@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmTickets));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.dgvSolicitudes = new System.Windows.Forms.DataGridView();
@@ -76,6 +77,14 @@
             this.Column3});
             this.dgvSolicitudes.Location = new System.Drawing.Point(12, 93);
             this.dgvSolicitudes.Name = "dgvSolicitudes";
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvSolicitudes.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvSolicitudes.RowHeadersVisible = false;
             this.dgvSolicitudes.Size = new System.Drawing.Size(860, 456);
             this.dgvSolicitudes.TabIndex = 24;
@@ -111,7 +120,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Name = "frmTickets";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "Tickets ";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmTickets_FormClosing);
             this.Load += new System.EventHandler(this.frmTickets_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
