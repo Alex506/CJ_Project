@@ -22,19 +22,7 @@ namespace Tickets
         }
 
         private void frmTickets_Load(object sender, EventArgs e)
-        {
-            //dgvSolicitudes.Rows[dgvSolicitudes.Rows.Add()].Cells[0].Value = "Juan Perez";
-            //dgvSolicitudes.Rows[0].Cells[1].Value = "02/07/2018";
-            //dgvSolicitudes.Rows[dgvSolicitudes.Rows.Add()].Cells[0].Value = "Diana Gomez";
-            //dgvSolicitudes.Rows[1].Cells[1].Value = "15/07/2018";
-            //dgvSolicitudes.Rows[dgvSolicitudes.Rows.Add()].Cells[0].Value = "Raquel Garcia";
-            //dgvSolicitudes.Rows[2].Cells[1].Value = "30/08/2018";
-            //dgvSolicitudes.Rows[dgvSolicitudes.Rows.Add()].Cells[0].Value = "Pedro Alfaro";
-            //dgvSolicitudes.Rows[3].Cells[1].Value = "05/08/2018";
-            //dgvSolicitudes.Rows[dgvSolicitudes.Rows.Add()].Cells[0].Value = "Valeria Salas";
-            //dgvSolicitudes.Rows[4].Cells[1].Value = "09/08/2018";
-
-
+        {   
             leerCorreos();
         }
         private void leerCorreos()
@@ -68,7 +56,6 @@ namespace Tickets
                         json = oMail.TextBody;
                         Formu jsonO = new Formu();
                         jsonO = JsonConvert.DeserializeObject<Formu>(json);
-                        MessageBox.Show(jsonO.NombreCompleto);
                         dgvSolicitudes.Rows[dgvSolicitudes.Rows.Add()].Cells[0].Value = jsonO.NombreCompleto;
                         dgvSolicitudes.Rows[contador].Cells[1].Value = oMail.ReceivedDate.ToShortDateString();
                         dgvSolicitudes.Rows[contador].Cells[3].Value = false;
@@ -85,17 +72,13 @@ namespace Tickets
 
         private void frmTickets_FormClosing(object sender, FormClosingEventArgs e)
         {            
-           //DialogResult dr =  MessageBox.Show("¿Desea salir?", "Salir",MessageBoxButtons.YesNo);
-           // if (DialogResult.No == dr)
-           // {
-           //     e.Cancel = true;
-           // }            
+          
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             dgvSolicitudes.Rows.Clear();
-            //leerCorreos();
+            leerCorreos();
         }
 
         private void dgvSolicitudes_CellContentClick(object sender, DataGridViewCellEventArgs e)
