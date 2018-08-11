@@ -79,6 +79,7 @@
             this.txtApellido = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.button1 = new System.Windows.Forms.Button();
             this.label29 = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
@@ -104,6 +105,7 @@
             this.txtOficina = new System.Windows.Forms.TextBox();
             this.label25 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.button2 = new System.Windows.Forms.Button();
             this.label36 = new System.Windows.Forms.Label();
             this.cbxTipoCredito = new System.Windows.Forms.ComboBox();
             this.label33 = new System.Windows.Forms.Label();
@@ -120,6 +122,7 @@
             this.panel11 = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.button5 = new System.Windows.Forms.Button();
             this.cbxEstadoF1 = new System.Windows.Forms.ComboBox();
             this.txtPuestoF1 = new System.Windows.Forms.TextBox();
             this.rbtnNoF1 = new System.Windows.Forms.RadioButton();
@@ -168,6 +171,7 @@
             this.label52 = new System.Windows.Forms.Label();
             this.txtSegundoA = new System.Windows.Forms.TextBox();
             this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.button6 = new System.Windows.Forms.Button();
             this.cbxEstadoF2 = new System.Windows.Forms.ComboBox();
             this.txtPuestoF2 = new System.Windows.Forms.TextBox();
             this.rbtnNoF2 = new System.Windows.Forms.RadioButton();
@@ -216,10 +220,16 @@
             this.label78 = new System.Windows.Forms.Label();
             this.txtSegundoAF2 = new System.Windows.Forms.TextBox();
             this.tabPage6 = new System.Windows.Forms.TabPage();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.rbtnAceptar = new System.Windows.Forms.RadioButton();
+            this.rbtnRechazar = new System.Windows.Forms.RadioButton();
+            this.btnConfirmar = new System.Windows.Forms.Button();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.panel27 = new System.Windows.Forms.Panel();
+            this.label79 = new System.Windows.Forms.Label();
+            this.panel28 = new System.Windows.Forms.Panel();
+            this.panel29 = new System.Windows.Forms.Panel();
+            this.label80 = new System.Windows.Forms.Label();
+            this.panel30 = new System.Windows.Forms.Panel();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -231,10 +241,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.tabPage5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            this.tabPage6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
             // 
+            this.tabControl1.CausesValidation = false;
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
@@ -753,7 +766,7 @@
             // 
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(50, 18);
+            this.pictureBox1.Location = new System.Drawing.Point(20, 15);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(249, 58);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -795,6 +808,20 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "DATOS DEL TRABAJO";
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(133)))), ((int)(((byte)(62)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(748, 728);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(160, 40);
+            this.button1.TabIndex = 97;
+            this.button1.Text = "Siguiente";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // label29
             // 
             this.label29.AutoSize = true;
@@ -834,7 +861,7 @@
             // 
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(50, 18);
+            this.pictureBox2.Location = new System.Drawing.Point(20, 15);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(249, 58);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1044,6 +1071,20 @@
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "SOLICITUD / TIPO CRÉDITO";
             // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(133)))), ((int)(((byte)(62)))));
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(748, 728);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(160, 40);
+            this.button2.TabIndex = 107;
+            this.button2.Text = "Siguiente";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // label36
             // 
             this.label36.AutoSize = true;
@@ -1182,7 +1223,7 @@
             // 
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(50, 18);
+            this.pictureBox3.Location = new System.Drawing.Point(20, 15);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(249, 58);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1246,6 +1287,20 @@
             this.tabPage4.Size = new System.Drawing.Size(935, 839);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "DATOS DEL FIADOR 1";
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(133)))), ((int)(((byte)(62)))));
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.button5.ForeColor = System.Drawing.Color.White;
+            this.button5.Location = new System.Drawing.Point(748, 728);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(160, 40);
+            this.button5.TabIndex = 138;
+            this.button5.Text = "Siguiente";
+            this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // cbxEstadoF1
             // 
@@ -1459,7 +1514,7 @@
             // 
             this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(21, 13);
+            this.pictureBox4.Location = new System.Drawing.Point(20, 15);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(249, 58);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1760,6 +1815,20 @@
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "DATOS DEL FIADOR 2";
             // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(133)))), ((int)(((byte)(62)))));
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.button6.ForeColor = System.Drawing.Color.White;
+            this.button6.Location = new System.Drawing.Point(751, 740);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(160, 40);
+            this.button6.TabIndex = 185;
+            this.button6.Text = "Siguiente";
+            this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
             // cbxEstadoF2
             // 
             this.cbxEstadoF2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1770,7 +1839,7 @@
             "Viudo ",
             "Divorciado",
             "Unión de Hecho"});
-            this.cbxEstadoF2.Location = new System.Drawing.Point(337, 222);
+            this.cbxEstadoF2.Location = new System.Drawing.Point(340, 234);
             this.cbxEstadoF2.Name = "cbxEstadoF2";
             this.cbxEstadoF2.Size = new System.Drawing.Size(192, 27);
             this.cbxEstadoF2.TabIndex = 184;
@@ -1778,7 +1847,7 @@
             // txtPuestoF2
             // 
             this.txtPuestoF2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPuestoF2.Location = new System.Drawing.Point(569, 220);
+            this.txtPuestoF2.Location = new System.Drawing.Point(572, 232);
             this.txtPuestoF2.Name = "txtPuestoF2";
             this.txtPuestoF2.Size = new System.Drawing.Size(191, 27);
             this.txtPuestoF2.TabIndex = 183;
@@ -1787,7 +1856,7 @@
             // 
             this.rbtnNoF2.AutoSize = true;
             this.rbtnNoF2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbtnNoF2.Location = new System.Drawing.Point(177, 780);
+            this.rbtnNoF2.Location = new System.Drawing.Point(125, 777);
             this.rbtnNoF2.Name = "rbtnNoF2";
             this.rbtnNoF2.Size = new System.Drawing.Size(47, 23);
             this.rbtnNoF2.TabIndex = 181;
@@ -1799,7 +1868,7 @@
             // 
             this.rbtnSiF2.AutoSize = true;
             this.rbtnSiF2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbtnSiF2.Location = new System.Drawing.Point(122, 736);
+            this.rbtnSiF2.Location = new System.Drawing.Point(125, 748);
             this.rbtnSiF2.Name = "rbtnSiF2";
             this.rbtnSiF2.Size = new System.Drawing.Size(40, 23);
             this.rbtnSiF2.TabIndex = 180;
@@ -1811,7 +1880,7 @@
             // 
             this.label58.AutoSize = true;
             this.label58.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label58.Location = new System.Drawing.Point(122, 705);
+            this.label58.Location = new System.Drawing.Point(125, 717);
             this.label58.Name = "label58";
             this.label58.Size = new System.Drawing.Size(80, 19);
             this.label58.TabIndex = 179;
@@ -1821,7 +1890,7 @@
             // 
             this.label59.AutoSize = true;
             this.label59.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label59.Location = new System.Drawing.Point(121, 599);
+            this.label59.Location = new System.Drawing.Point(124, 611);
             this.label59.Name = "label59";
             this.label59.Size = new System.Drawing.Size(151, 19);
             this.label59.TabIndex = 178;
@@ -1830,7 +1899,7 @@
             // panel21
             // 
             this.panel21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(133)))), ((int)(((byte)(62)))));
-            this.panel21.Location = new System.Drawing.Point(125, 631);
+            this.panel21.Location = new System.Drawing.Point(128, 643);
             this.panel21.Name = "panel21";
             this.panel21.Size = new System.Drawing.Size(615, 5);
             this.panel21.TabIndex = 177;
@@ -1838,7 +1907,7 @@
             // panel22
             // 
             this.panel22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(133)))), ((int)(((byte)(62)))));
-            this.panel22.Location = new System.Drawing.Point(125, 587);
+            this.panel22.Location = new System.Drawing.Point(128, 599);
             this.panel22.Name = "panel22";
             this.panel22.Size = new System.Drawing.Size(615, 5);
             this.panel22.TabIndex = 176;
@@ -1847,7 +1916,7 @@
             // 
             this.fecha2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fecha2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.fecha2.Location = new System.Drawing.Point(568, 677);
+            this.fecha2.Location = new System.Drawing.Point(571, 689);
             this.fecha2.Name = "fecha2";
             this.fecha2.Size = new System.Drawing.Size(188, 27);
             this.fecha2.TabIndex = 175;
@@ -1855,7 +1924,7 @@
             // txtNetoF2
             // 
             this.txtNetoF2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNetoF2.Location = new System.Drawing.Point(337, 675);
+            this.txtNetoF2.Location = new System.Drawing.Point(340, 687);
             this.txtNetoF2.Name = "txtNetoF2";
             this.txtNetoF2.Size = new System.Drawing.Size(192, 27);
             this.txtNetoF2.TabIndex = 174;
@@ -1863,7 +1932,7 @@
             // txtBrutoF2
             // 
             this.txtBrutoF2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBrutoF2.Location = new System.Drawing.Point(122, 675);
+            this.txtBrutoF2.Location = new System.Drawing.Point(125, 687);
             this.txtBrutoF2.Name = "txtBrutoF2";
             this.txtBrutoF2.Size = new System.Drawing.Size(188, 27);
             this.txtBrutoF2.TabIndex = 173;
@@ -1872,7 +1941,7 @@
             // 
             this.label60.AutoSize = true;
             this.label60.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label60.Location = new System.Drawing.Point(568, 655);
+            this.label60.Location = new System.Drawing.Point(571, 667);
             this.label60.Name = "label60";
             this.label60.Size = new System.Drawing.Size(138, 19);
             this.label60.TabIndex = 172;
@@ -1882,7 +1951,7 @@
             // 
             this.label61.AutoSize = true;
             this.label61.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label61.Location = new System.Drawing.Point(337, 653);
+            this.label61.Location = new System.Drawing.Point(340, 665);
             this.label61.Name = "label61";
             this.label61.Size = new System.Drawing.Size(169, 19);
             this.label61.TabIndex = 171;
@@ -1892,7 +1961,7 @@
             // 
             this.label62.AutoSize = true;
             this.label62.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label62.Location = new System.Drawing.Point(122, 653);
+            this.label62.Location = new System.Drawing.Point(125, 665);
             this.label62.Name = "label62";
             this.label62.Size = new System.Drawing.Size(181, 19);
             this.label62.TabIndex = 170;
@@ -1901,7 +1970,7 @@
             // txtCelF2
             // 
             this.txtCelF2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCelF2.Location = new System.Drawing.Point(126, 355);
+            this.txtCelF2.Location = new System.Drawing.Point(129, 367);
             this.txtCelF2.Name = "txtCelF2";
             this.txtCelF2.Size = new System.Drawing.Size(192, 27);
             this.txtCelF2.TabIndex = 169;
@@ -1909,7 +1978,7 @@
             // txtTelOF2
             // 
             this.txtTelOF2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTelOF2.Location = new System.Drawing.Point(569, 286);
+            this.txtTelOF2.Location = new System.Drawing.Point(572, 298);
             this.txtTelOF2.Name = "txtTelOF2";
             this.txtTelOF2.Size = new System.Drawing.Size(192, 27);
             this.txtTelOF2.TabIndex = 168;
@@ -1917,7 +1986,7 @@
             // txtTelefonoF2
             // 
             this.txtTelefonoF2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTelefonoF2.Location = new System.Drawing.Point(337, 284);
+            this.txtTelefonoF2.Location = new System.Drawing.Point(340, 296);
             this.txtTelefonoF2.Name = "txtTelefonoF2";
             this.txtTelefonoF2.Size = new System.Drawing.Size(192, 27);
             this.txtTelefonoF2.TabIndex = 167;
@@ -1925,7 +1994,7 @@
             // txtPatronoF2
             // 
             this.txtPatronoF2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPatronoF2.Location = new System.Drawing.Point(126, 285);
+            this.txtPatronoF2.Location = new System.Drawing.Point(129, 297);
             this.txtPatronoF2.Name = "txtPatronoF2";
             this.txtPatronoF2.Size = new System.Drawing.Size(192, 27);
             this.txtPatronoF2.TabIndex = 166;
@@ -1934,7 +2003,7 @@
             // 
             this.label63.AutoSize = true;
             this.label63.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label63.Location = new System.Drawing.Point(126, 333);
+            this.label63.Location = new System.Drawing.Point(129, 345);
             this.label63.Name = "label63";
             this.label63.Size = new System.Drawing.Size(131, 19);
             this.label63.TabIndex = 165;
@@ -1944,7 +2013,7 @@
             // 
             this.label64.AutoSize = true;
             this.label64.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label64.Location = new System.Drawing.Point(569, 264);
+            this.label64.Location = new System.Drawing.Point(572, 276);
             this.label64.Name = "label64";
             this.label64.Size = new System.Drawing.Size(131, 19);
             this.label64.TabIndex = 164;
@@ -1954,7 +2023,7 @@
             // 
             this.label65.AutoSize = true;
             this.label65.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label65.Location = new System.Drawing.Point(337, 262);
+            this.label65.Location = new System.Drawing.Point(340, 274);
             this.label65.Name = "label65";
             this.label65.Size = new System.Drawing.Size(156, 19);
             this.label65.TabIndex = 163;
@@ -1964,7 +2033,7 @@
             // 
             this.label66.AutoSize = true;
             this.label66.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label66.Location = new System.Drawing.Point(126, 262);
+            this.label66.Location = new System.Drawing.Point(129, 274);
             this.label66.Name = "label66";
             this.label66.Size = new System.Drawing.Size(135, 19);
             this.label66.TabIndex = 162;
@@ -1974,7 +2043,7 @@
             // 
             this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(15, 5);
+            this.pictureBox5.Location = new System.Drawing.Point(20, 15);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(249, 58);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1984,7 +2053,7 @@
             // panel23
             // 
             this.panel23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(133)))), ((int)(((byte)(62)))));
-            this.panel23.Location = new System.Drawing.Point(127, 69);
+            this.panel23.Location = new System.Drawing.Point(130, 81);
             this.panel23.Name = "panel23";
             this.panel23.Size = new System.Drawing.Size(615, 5);
             this.panel23.TabIndex = 160;
@@ -1993,7 +2062,7 @@
             // 
             this.label67.AutoSize = true;
             this.label67.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label67.Location = new System.Drawing.Point(124, 80);
+            this.label67.Location = new System.Drawing.Point(127, 92);
             this.label67.Name = "label67";
             this.label67.Size = new System.Drawing.Size(251, 19);
             this.label67.TabIndex = 159;
@@ -2002,7 +2071,7 @@
             // panel24
             // 
             this.panel24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(133)))), ((int)(((byte)(62)))));
-            this.panel24.Location = new System.Drawing.Point(126, 401);
+            this.panel24.Location = new System.Drawing.Point(129, 413);
             this.panel24.Name = "panel24";
             this.panel24.Size = new System.Drawing.Size(615, 5);
             this.panel24.TabIndex = 157;
@@ -2010,7 +2079,7 @@
             // panel25
             // 
             this.panel25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(133)))), ((int)(((byte)(62)))));
-            this.panel25.Location = new System.Drawing.Point(127, 109);
+            this.panel25.Location = new System.Drawing.Point(130, 121);
             this.panel25.Name = "panel25";
             this.panel25.Size = new System.Drawing.Size(615, 5);
             this.panel25.TabIndex = 158;
@@ -2019,7 +2088,7 @@
             // 
             this.label68.AutoSize = true;
             this.label68.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label68.Location = new System.Drawing.Point(123, 412);
+            this.label68.Location = new System.Drawing.Point(126, 424);
             this.label68.Name = "label68";
             this.label68.Size = new System.Drawing.Size(74, 19);
             this.label68.TabIndex = 156;
@@ -2028,7 +2097,7 @@
             // panel26
             // 
             this.panel26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(133)))), ((int)(((byte)(62)))));
-            this.panel26.Location = new System.Drawing.Point(126, 441);
+            this.panel26.Location = new System.Drawing.Point(129, 453);
             this.panel26.Name = "panel26";
             this.panel26.Size = new System.Drawing.Size(615, 5);
             this.panel26.TabIndex = 155;
@@ -2036,7 +2105,7 @@
             // txtSeñasF2
             // 
             this.txtSeñasF2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSeñasF2.Location = new System.Drawing.Point(128, 555);
+            this.txtSeñasF2.Location = new System.Drawing.Point(131, 567);
             this.txtSeñasF2.Name = "txtSeñasF2";
             this.txtSeñasF2.Size = new System.Drawing.Size(393, 26);
             this.txtSeñasF2.TabIndex = 150;
@@ -2045,7 +2114,7 @@
             // 
             this.label69.AutoSize = true;
             this.label69.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label69.Location = new System.Drawing.Point(128, 525);
+            this.label69.Location = new System.Drawing.Point(131, 537);
             this.label69.Name = "label69";
             this.label69.Size = new System.Drawing.Size(97, 19);
             this.label69.TabIndex = 154;
@@ -2055,7 +2124,7 @@
             // 
             this.label70.AutoSize = true;
             this.label70.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label70.Location = new System.Drawing.Point(565, 455);
+            this.label70.Location = new System.Drawing.Point(568, 467);
             this.label70.Name = "label70";
             this.label70.Size = new System.Drawing.Size(66, 19);
             this.label70.TabIndex = 152;
@@ -2070,7 +2139,7 @@
             "Soltero ",
             "Viudo ",
             "Divorciado"});
-            this.cbxDistritoF2.Location = new System.Drawing.Point(565, 485);
+            this.cbxDistritoF2.Location = new System.Drawing.Point(568, 497);
             this.cbxDistritoF2.Name = "cbxDistritoF2";
             this.cbxDistritoF2.Size = new System.Drawing.Size(192, 28);
             this.cbxDistritoF2.TabIndex = 153;
@@ -2079,7 +2148,7 @@
             // 
             this.label71.AutoSize = true;
             this.label71.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label71.Location = new System.Drawing.Point(334, 453);
+            this.label71.Location = new System.Drawing.Point(337, 465);
             this.label71.Name = "label71";
             this.label71.Size = new System.Drawing.Size(65, 19);
             this.label71.TabIndex = 149;
@@ -2094,7 +2163,7 @@
             "Soltero ",
             "Viudo ",
             "Divorciado"});
-            this.cbxCantonF2.Location = new System.Drawing.Point(334, 483);
+            this.cbxCantonF2.Location = new System.Drawing.Point(337, 495);
             this.cbxCantonF2.Name = "cbxCantonF2";
             this.cbxCantonF2.Size = new System.Drawing.Size(192, 28);
             this.cbxCantonF2.TabIndex = 151;
@@ -2103,7 +2172,7 @@
             // 
             this.label72.AutoSize = true;
             this.label72.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label72.Location = new System.Drawing.Point(128, 453);
+            this.label72.Location = new System.Drawing.Point(131, 465);
             this.label72.Name = "label72";
             this.label72.Size = new System.Drawing.Size(79, 19);
             this.label72.TabIndex = 147;
@@ -2121,7 +2190,7 @@
             "Puntarenas ",
             "Guanacaste",
             "Limón "});
-            this.cbxProvinciaF2.Location = new System.Drawing.Point(128, 483);
+            this.cbxProvinciaF2.Location = new System.Drawing.Point(131, 495);
             this.cbxProvinciaF2.Name = "cbxProvinciaF2";
             this.cbxProvinciaF2.Size = new System.Drawing.Size(192, 28);
             this.cbxProvinciaF2.TabIndex = 148;
@@ -2130,7 +2199,7 @@
             // 
             this.label73.AutoSize = true;
             this.label73.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label73.Location = new System.Drawing.Point(337, 193);
+            this.label73.Location = new System.Drawing.Point(340, 205);
             this.label73.Name = "label73";
             this.label73.Size = new System.Drawing.Size(97, 19);
             this.label73.TabIndex = 146;
@@ -2140,7 +2209,7 @@
             // 
             this.label74.AutoSize = true;
             this.label74.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label74.Location = new System.Drawing.Point(569, 195);
+            this.label74.Location = new System.Drawing.Point(572, 207);
             this.label74.Name = "label74";
             this.label74.Size = new System.Drawing.Size(62, 19);
             this.label74.TabIndex = 144;
@@ -2150,7 +2219,7 @@
             // 
             this.label75.AutoSize = true;
             this.label75.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label75.Location = new System.Drawing.Point(126, 193);
+            this.label75.Location = new System.Drawing.Point(129, 205);
             this.label75.Name = "label75";
             this.label75.Size = new System.Drawing.Size(63, 19);
             this.label75.TabIndex = 142;
@@ -2159,7 +2228,7 @@
             // txtCedF2
             // 
             this.txtCedF2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCedF2.Location = new System.Drawing.Point(126, 218);
+            this.txtCedF2.Location = new System.Drawing.Point(129, 230);
             this.txtCedF2.Name = "txtCedF2";
             this.txtCedF2.Size = new System.Drawing.Size(192, 26);
             this.txtCedF2.TabIndex = 141;
@@ -2168,7 +2237,7 @@
             // 
             this.label76.AutoSize = true;
             this.label76.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label76.Location = new System.Drawing.Point(126, 123);
+            this.label76.Location = new System.Drawing.Point(129, 135);
             this.label76.Name = "label76";
             this.label76.Size = new System.Drawing.Size(125, 19);
             this.label76.TabIndex = 140;
@@ -2177,7 +2246,7 @@
             // txtPrimerAF2
             // 
             this.txtPrimerAF2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPrimerAF2.Location = new System.Drawing.Point(126, 148);
+            this.txtPrimerAF2.Location = new System.Drawing.Point(129, 160);
             this.txtPrimerAF2.Name = "txtPrimerAF2";
             this.txtPrimerAF2.Size = new System.Drawing.Size(192, 26);
             this.txtPrimerAF2.TabIndex = 139;
@@ -2186,7 +2255,7 @@
             // 
             this.label77.AutoSize = true;
             this.label77.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label77.Location = new System.Drawing.Point(569, 125);
+            this.label77.Location = new System.Drawing.Point(572, 137);
             this.label77.Name = "label77";
             this.label77.Size = new System.Drawing.Size(145, 19);
             this.label77.TabIndex = 138;
@@ -2195,7 +2264,7 @@
             // txtNombreComF2
             // 
             this.txtNombreComF2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombreComF2.Location = new System.Drawing.Point(569, 150);
+            this.txtNombreComF2.Location = new System.Drawing.Point(572, 162);
             this.txtNombreComF2.Name = "txtNombreComF2";
             this.txtNombreComF2.Size = new System.Drawing.Size(192, 26);
             this.txtNombreComF2.TabIndex = 137;
@@ -2204,7 +2273,7 @@
             // 
             this.label78.AutoSize = true;
             this.label78.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label78.Location = new System.Drawing.Point(337, 123);
+            this.label78.Location = new System.Drawing.Point(340, 135);
             this.label78.Name = "label78";
             this.label78.Size = new System.Drawing.Size(140, 19);
             this.label78.TabIndex = 136;
@@ -2213,75 +2282,130 @@
             // txtSegundoAF2
             // 
             this.txtSegundoAF2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSegundoAF2.Location = new System.Drawing.Point(337, 148);
+            this.txtSegundoAF2.Location = new System.Drawing.Point(340, 160);
             this.txtSegundoAF2.Name = "txtSegundoAF2";
             this.txtSegundoAF2.Size = new System.Drawing.Size(192, 26);
             this.txtSegundoAF2.TabIndex = 135;
             // 
             // tabPage6
             // 
+            this.tabPage6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.tabPage6.Controls.Add(this.panel29);
+            this.tabPage6.Controls.Add(this.label80);
+            this.tabPage6.Controls.Add(this.panel30);
+            this.tabPage6.Controls.Add(this.panel27);
+            this.tabPage6.Controls.Add(this.label79);
+            this.tabPage6.Controls.Add(this.panel28);
+            this.tabPage6.Controls.Add(this.pictureBox6);
+            this.tabPage6.Controls.Add(this.btnConfirmar);
+            this.tabPage6.Controls.Add(this.rbtnRechazar);
+            this.tabPage6.Controls.Add(this.rbtnAceptar);
             this.tabPage6.Location = new System.Drawing.Point(4, 22);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Size = new System.Drawing.Size(935, 839);
             this.tabPage6.TabIndex = 5;
             this.tabPage6.Text = "CONFIRMACIÓN DEL TRÁMITE";
-            this.tabPage6.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // rbtnAceptar
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(133)))), ((int)(((byte)(62)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(748, 728);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(160, 40);
-            this.button2.TabIndex = 107;
-            this.button2.Text = "Siguiente";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.rbtnAceptar.AutoSize = true;
+            this.rbtnAceptar.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbtnAceptar.Location = new System.Drawing.Point(226, 191);
+            this.rbtnAceptar.Name = "rbtnAceptar";
+            this.rbtnAceptar.Size = new System.Drawing.Size(81, 23);
+            this.rbtnAceptar.TabIndex = 1;
+            this.rbtnAceptar.TabStop = true;
+            this.rbtnAceptar.Text = "Aceptar";
+            this.rbtnAceptar.UseVisualStyleBackColor = true;
+            this.rbtnAceptar.Visible = false;
             // 
-            // button1
+            // rbtnRechazar
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(133)))), ((int)(((byte)(62)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(748, 728);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(160, 40);
-            this.button1.TabIndex = 97;
-            this.button1.Text = "Siguiente";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.rbtnRechazar.AutoSize = true;
+            this.rbtnRechazar.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbtnRechazar.Location = new System.Drawing.Point(226, 232);
+            this.rbtnRechazar.Name = "rbtnRechazar";
+            this.rbtnRechazar.Size = new System.Drawing.Size(90, 23);
+            this.rbtnRechazar.TabIndex = 2;
+            this.rbtnRechazar.TabStop = true;
+            this.rbtnRechazar.Text = "Rechazar";
+            this.rbtnRechazar.UseVisualStyleBackColor = true;
+            this.rbtnRechazar.Visible = false;
             // 
-            // button5
+            // btnConfirmar
             // 
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(133)))), ((int)(((byte)(62)))));
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(748, 728);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(160, 40);
-            this.button5.TabIndex = 138;
-            this.button5.Text = "Siguiente";
-            this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.btnConfirmar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(133)))), ((int)(((byte)(62)))));
+            this.btnConfirmar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnConfirmar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btnConfirmar.ForeColor = System.Drawing.Color.White;
+            this.btnConfirmar.Location = new System.Drawing.Point(19, 208);
+            this.btnConfirmar.Name = "btnConfirmar";
+            this.btnConfirmar.Size = new System.Drawing.Size(160, 40);
+            this.btnConfirmar.TabIndex = 108;
+            this.btnConfirmar.Text = "Confirmar";
+            this.btnConfirmar.UseVisualStyleBackColor = false;
             // 
-            // button6
+            // pictureBox6
             // 
-            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(133)))), ((int)(((byte)(62)))));
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Location = new System.Drawing.Point(748, 728);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(160, 40);
-            this.button6.TabIndex = 185;
-            this.button6.Text = "Siguiente";
-            this.button6.UseVisualStyleBackColor = false;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
+            this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
+            this.pictureBox6.Location = new System.Drawing.Point(20, 15);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(249, 58);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox6.TabIndex = 115;
+            this.pictureBox6.TabStop = false;
+            // 
+            // panel27
+            // 
+            this.panel27.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(133)))), ((int)(((byte)(62)))));
+            this.panel27.Location = new System.Drawing.Point(19, 107);
+            this.panel27.Name = "panel27";
+            this.panel27.Size = new System.Drawing.Size(615, 5);
+            this.panel27.TabIndex = 118;
+            // 
+            // label79
+            // 
+            this.label79.AutoSize = true;
+            this.label79.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label79.Location = new System.Drawing.Point(16, 118);
+            this.label79.Name = "label79";
+            this.label79.Size = new System.Drawing.Size(191, 19);
+            this.label79.TabIndex = 117;
+            this.label79.Text = "Confirmación Del Trámite";
+            // 
+            // panel28
+            // 
+            this.panel28.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(133)))), ((int)(((byte)(62)))));
+            this.panel28.Location = new System.Drawing.Point(19, 147);
+            this.panel28.Name = "panel28";
+            this.panel28.Size = new System.Drawing.Size(615, 5);
+            this.panel28.TabIndex = 116;
+            // 
+            // panel29
+            // 
+            this.panel29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(133)))), ((int)(((byte)(62)))));
+            this.panel29.Location = new System.Drawing.Point(18, 311);
+            this.panel29.Name = "panel29";
+            this.panel29.Size = new System.Drawing.Size(615, 5);
+            this.panel29.TabIndex = 121;
+            // 
+            // label80
+            // 
+            this.label80.AutoSize = true;
+            this.label80.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label80.Location = new System.Drawing.Point(15, 322);
+            this.label80.Name = "label80";
+            this.label80.Size = new System.Drawing.Size(0, 19);
+            this.label80.TabIndex = 120;
+            // 
+            // panel30
+            // 
+            this.panel30.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(133)))), ((int)(((byte)(62)))));
+            this.panel30.Location = new System.Drawing.Point(18, 351);
+            this.panel30.Name = "panel30";
+            this.panel30.Size = new System.Drawing.Size(615, 5);
+            this.panel30.TabIndex = 119;
             // 
             // frmFormulario
             // 
@@ -2308,6 +2432,9 @@
             this.tabPage5.ResumeLayout(false);
             this.tabPage5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            this.tabPage6.ResumeLayout(false);
+            this.tabPage6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2505,6 +2632,16 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Panel panel29;
+        private System.Windows.Forms.Label label80;
+        private System.Windows.Forms.Panel panel30;
+        private System.Windows.Forms.Panel panel27;
+        private System.Windows.Forms.Label label79;
+        private System.Windows.Forms.Panel panel28;
+        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.Button btnConfirmar;
+        private System.Windows.Forms.RadioButton rbtnRechazar;
+        private System.Windows.Forms.RadioButton rbtnAceptar;
     }
 }
 
