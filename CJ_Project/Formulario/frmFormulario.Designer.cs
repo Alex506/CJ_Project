@@ -1327,7 +1327,7 @@
             // 
             this.rbtnNoF1.AutoSize = true;
             this.rbtnNoF1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbtnNoF1.Location = new System.Drawing.Point(155, 790);
+            this.rbtnNoF1.Location = new System.Drawing.Point(126, 785);
             this.rbtnNoF1.Name = "rbtnNoF1";
             this.rbtnNoF1.Size = new System.Drawing.Size(47, 23);
             this.rbtnNoF1.TabIndex = 134;
