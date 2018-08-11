@@ -23,9 +23,8 @@ namespace Tickets
 
         private void frmTickets_Load(object sender, EventArgs e)
         {
-            dgvSolicitudes.Rows[dgvSolicitudes.Rows.Add()].Cells[0].Value = "Juan Perez";
-            dgvSolicitudes.Rows[0].Cells[1].Value = "";
-            //leerCorreos();
+        
+            leerCorreos();
         }
         private void leerCorreos()
         {
@@ -55,22 +54,15 @@ namespace Tickets
                     
                     if (!info.Read)
                     {
-                        dgvSolicitudes.Rows[dgvSolicitudes.Rows.Add()].Cells[0].Value = oMail.TextBody;
-                        dgvSolicitudes.Rows[contador].Cells[1].Value = oMail.ReceivedDate;
-                        dgvSolicitudes.Rows[contador].Cells[3].Value = false;
-
-                        json = oMail.TextBody.ToString() ;
-                        MessageBox.Show(json);
+                        json = oMail.TextBody;
                         Formu jsonObj = new Formu();
                         jsonObj = JsonConvert.DeserializeObject<Formu>(json);
-                        MessageBox.Show(jsonObj.NombreCompleto);
+                        dgvSolicitudes.Rows[dgvSolicitudes.Rows.Add()].Cells[0].Value = jsonObj.NombreCompleto;
+                        dgvSolicitudes.Rows[contador].Cells[1].Value = oMail.ReceivedDate.ToShortDateString();
+                        dgvSolicitudes.Rows[contador].Cells[3].Value = false;                        
                         contador++;
                     }
-                    // Download email from GMail IMAP4 server
-                    //string json = oMail.TextBody;
-                    //MessageBox.Show(json);
-                    //InfoForm JsonObj = new InfoForm();
-                    //JsonObj = JsonConvert.DeserializeObject<InfoForm>(json);
+                    
                 }
                 // Quit and purge emails marked as deleted from Gmail IMAP4 server.
                 oClient.Quit();
@@ -84,12 +76,7 @@ namespace Tickets
         }
 
         private void frmTickets_FormClosing(object sender, FormClosingEventArgs e)
-        {            
-           //DialogResult dr =  MessageBox.Show("¿Desea salir?", "Salir",MessageBoxButtons.YesNo);
-           // if (DialogResult.No == dr)
-           // {
-           //     e.Cancel = true;
-           // }            
+        {        
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -100,10 +87,7 @@ namespace Tickets
 
         private void dgvSolicitudes_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            if ()
-            {
-
-            }
+           
         }
     }
 }
