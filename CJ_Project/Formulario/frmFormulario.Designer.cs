@@ -51,7 +51,6 @@
             this.label19 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.btnSiguiente = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label13 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -80,7 +79,6 @@
             this.txtApellido = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.button1 = new System.Windows.Forms.Button();
             this.label29 = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
@@ -106,7 +104,6 @@
             this.txtOficina = new System.Windows.Forms.TextBox();
             this.label25 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.button2 = new System.Windows.Forms.Button();
             this.label36 = new System.Windows.Forms.Label();
             this.cbxTipoCredito = new System.Windows.Forms.ComboBox();
             this.label33 = new System.Windows.Forms.Label();
@@ -125,7 +122,6 @@
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.cbxEstadoF1 = new System.Windows.Forms.ComboBox();
             this.txtPuestoF1 = new System.Windows.Forms.TextBox();
-            this.btnSiguienteF1 = new System.Windows.Forms.Button();
             this.rbtnNoF1 = new System.Windows.Forms.RadioButton();
             this.rbtnSiF1 = new System.Windows.Forms.RadioButton();
             this.label57 = new System.Windows.Forms.Label();
@@ -174,7 +170,6 @@
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.cbxEstadoF2 = new System.Windows.Forms.ComboBox();
             this.txtPuestoF2 = new System.Windows.Forms.TextBox();
-            this.btnSiguienteF2 = new System.Windows.Forms.Button();
             this.rbtnNoF2 = new System.Windows.Forms.RadioButton();
             this.rbtnSiF2 = new System.Windows.Forms.RadioButton();
             this.label58 = new System.Windows.Forms.Label();
@@ -221,6 +216,10 @@
             this.label78 = new System.Windows.Forms.Label();
             this.txtSegundoAF2 = new System.Windows.Forms.TextBox();
             this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -271,7 +270,6 @@
             this.tabPage1.Controls.Add(this.label19);
             this.tabPage1.Controls.Add(this.label18);
             this.tabPage1.Controls.Add(this.label4);
-            this.tabPage1.Controls.Add(this.btnSiguiente);
             this.tabPage1.Controls.Add(this.panel3);
             this.tabPage1.Controls.Add(this.label13);
             this.tabPage1.Controls.Add(this.panel2);
@@ -308,12 +306,16 @@
             // 
             // sig
             // 
-            this.sig.Location = new System.Drawing.Point(837, 584);
+            this.sig.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(133)))), ((int)(((byte)(62)))));
+            this.sig.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.sig.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.sig.ForeColor = System.Drawing.Color.White;
+            this.sig.Location = new System.Drawing.Point(748, 728);
             this.sig.Name = "sig";
-            this.sig.Size = new System.Drawing.Size(75, 23);
+            this.sig.Size = new System.Drawing.Size(160, 40);
             this.sig.TabIndex = 83;
-            this.sig.Text = "button5";
-            this.sig.UseVisualStyleBackColor = true;
+            this.sig.Text = "Siguiente";
+            this.sig.UseVisualStyleBackColor = false;
             this.sig.Click += new System.EventHandler(this.sig_Click);
             // 
             // button4
@@ -486,23 +488,6 @@
             this.label4.Size = new System.Drawing.Size(165, 19);
             this.label4.TabIndex = 64;
             this.label4.Text = "Nombre del Cónyuge:";
-            // 
-            // btnSiguiente
-            // 
-            this.btnSiguiente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(133)))), ((int)(((byte)(62)))));
-            this.btnSiguiente.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(152)))), ((int)(((byte)(40)))));
-            this.btnSiguiente.FlatAppearance.BorderSize = 2;
-            this.btnSiguiente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSiguiente.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSiguiente.ForeColor = System.Drawing.Color.White;
-            this.btnSiguiente.Image = ((System.Drawing.Image)(resources.GetObject("btnSiguiente.Image")));
-            this.btnSiguiente.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnSiguiente.Location = new System.Drawing.Point(748, 728);
-            this.btnSiguiente.Name = "btnSiguiente";
-            this.btnSiguiente.Size = new System.Drawing.Size(160, 40);
-            this.btnSiguiente.TabIndex = 63;
-            this.btnSiguiente.Text = "Siguiente";
-            this.btnSiguiente.UseVisualStyleBackColor = false;
             // 
             // panel3
             // 
@@ -810,23 +795,6 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "DATOS DEL TRABAJO";
             // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(133)))), ((int)(((byte)(62)))));
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(152)))), ((int)(((byte)(40)))));
-            this.button1.FlatAppearance.BorderSize = 2;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.Location = new System.Drawing.Point(748, 728);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(160, 40);
-            this.button1.TabIndex = 97;
-            this.button1.Text = "Siguiente";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
             // label29
             // 
             this.label29.AutoSize = true;
@@ -1076,23 +1044,6 @@
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "SOLICITUD / TIPO CRÉDITO";
             // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(133)))), ((int)(((byte)(62)))));
-            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(152)))), ((int)(((byte)(40)))));
-            this.button2.FlatAppearance.BorderSize = 2;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button2.Location = new System.Drawing.Point(748, 728);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(160, 40);
-            this.button2.TabIndex = 107;
-            this.button2.Text = "Siguiente";
-            this.button2.UseVisualStyleBackColor = false;
-            // 
             // label36
             // 
             this.label36.AutoSize = true;
@@ -1241,9 +1192,9 @@
             // tabPage4
             // 
             this.tabPage4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.tabPage4.Controls.Add(this.button5);
             this.tabPage4.Controls.Add(this.cbxEstadoF1);
             this.tabPage4.Controls.Add(this.txtPuestoF1);
-            this.tabPage4.Controls.Add(this.btnSiguienteF1);
             this.tabPage4.Controls.Add(this.rbtnNoF1);
             this.tabPage4.Controls.Add(this.rbtnSiF1);
             this.tabPage4.Controls.Add(this.label57);
@@ -1316,23 +1267,6 @@
             this.txtPuestoF1.Name = "txtPuestoF1";
             this.txtPuestoF1.Size = new System.Drawing.Size(193, 27);
             this.txtPuestoF1.TabIndex = 136;
-            // 
-            // btnSiguienteF1
-            // 
-            this.btnSiguienteF1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(133)))), ((int)(((byte)(62)))));
-            this.btnSiguienteF1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(152)))), ((int)(((byte)(40)))));
-            this.btnSiguienteF1.FlatAppearance.BorderSize = 2;
-            this.btnSiguienteF1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSiguienteF1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSiguienteF1.ForeColor = System.Drawing.Color.White;
-            this.btnSiguienteF1.Image = ((System.Drawing.Image)(resources.GetObject("btnSiguienteF1.Image")));
-            this.btnSiguienteF1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnSiguienteF1.Location = new System.Drawing.Point(719, 723);
-            this.btnSiguienteF1.Name = "btnSiguienteF1";
-            this.btnSiguienteF1.Size = new System.Drawing.Size(160, 40);
-            this.btnSiguienteF1.TabIndex = 135;
-            this.btnSiguienteF1.Text = "Siguiente";
-            this.btnSiguienteF1.UseVisualStyleBackColor = false;
             // 
             // rbtnNoF1
             // 
@@ -1772,9 +1706,9 @@
             // tabPage5
             // 
             this.tabPage5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.tabPage5.Controls.Add(this.button6);
             this.tabPage5.Controls.Add(this.cbxEstadoF2);
             this.tabPage5.Controls.Add(this.txtPuestoF2);
-            this.tabPage5.Controls.Add(this.btnSiguienteF2);
             this.tabPage5.Controls.Add(this.rbtnNoF2);
             this.tabPage5.Controls.Add(this.rbtnSiF2);
             this.tabPage5.Controls.Add(this.label58);
@@ -1848,23 +1782,6 @@
             this.txtPuestoF2.Name = "txtPuestoF2";
             this.txtPuestoF2.Size = new System.Drawing.Size(191, 27);
             this.txtPuestoF2.TabIndex = 183;
-            // 
-            // btnSiguienteF2
-            // 
-            this.btnSiguienteF2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(133)))), ((int)(((byte)(62)))));
-            this.btnSiguienteF2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(152)))), ((int)(((byte)(40)))));
-            this.btnSiguienteF2.FlatAppearance.BorderSize = 2;
-            this.btnSiguienteF2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSiguienteF2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSiguienteF2.ForeColor = System.Drawing.Color.White;
-            this.btnSiguienteF2.Image = ((System.Drawing.Image)(resources.GetObject("btnSiguienteF2.Image")));
-            this.btnSiguienteF2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnSiguienteF2.Location = new System.Drawing.Point(713, 715);
-            this.btnSiguienteF2.Name = "btnSiguienteF2";
-            this.btnSiguienteF2.Size = new System.Drawing.Size(160, 40);
-            this.btnSiguienteF2.TabIndex = 182;
-            this.btnSiguienteF2.Text = "Siguiente";
-            this.btnSiguienteF2.UseVisualStyleBackColor = false;
             // 
             // rbtnNoF2
             // 
@@ -2310,6 +2227,62 @@
             this.tabPage6.Text = "CONFIRMACIÓN DEL TRÁMITE";
             this.tabPage6.UseVisualStyleBackColor = true;
             // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(133)))), ((int)(((byte)(62)))));
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(748, 728);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(160, 40);
+            this.button2.TabIndex = 107;
+            this.button2.Text = "Siguiente";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(133)))), ((int)(((byte)(62)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(748, 728);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(160, 40);
+            this.button1.TabIndex = 97;
+            this.button1.Text = "Siguiente";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(133)))), ((int)(((byte)(62)))));
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.button5.ForeColor = System.Drawing.Color.White;
+            this.button5.Location = new System.Drawing.Point(748, 728);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(160, 40);
+            this.button5.TabIndex = 138;
+            this.button5.Text = "Siguiente";
+            this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(133)))), ((int)(((byte)(62)))));
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.button6.ForeColor = System.Drawing.Color.White;
+            this.button6.Location = new System.Drawing.Point(748, 728);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(160, 40);
+            this.button6.TabIndex = 185;
+            this.button6.Text = "Siguiente";
+            this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
             // frmFormulario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2317,8 +2290,8 @@
             this.ClientSize = new System.Drawing.Size(939, 858);
             this.Controls.Add(this.tabControl1);
             this.Name = "frmFormulario";
-            this.Text = "Formulario";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmFormulario_FormClosing);
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Form1";
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
@@ -2362,7 +2335,6 @@
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button btnSiguiente;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Panel panel2;
@@ -2391,7 +2363,6 @@
         private System.Windows.Forms.TextBox txtApellido;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Panel panel9;
@@ -2417,7 +2388,6 @@
         private System.Windows.Forms.TextBox txtOficina;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label36;
         private System.Windows.Forms.ComboBox cbxTipoCredito;
         private System.Windows.Forms.Label label33;
@@ -2436,7 +2406,6 @@
         private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.ComboBox cbxEstadoF1;
         private System.Windows.Forms.TextBox txtPuestoF1;
-        private System.Windows.Forms.Button btnSiguienteF1;
         private System.Windows.Forms.RadioButton rbtnNoF1;
         private System.Windows.Forms.RadioButton rbtnSiF1;
         private System.Windows.Forms.Label label57;
@@ -2485,7 +2454,6 @@
         private System.Windows.Forms.TabPage tabPage5;
         private System.Windows.Forms.ComboBox cbxEstadoF2;
         private System.Windows.Forms.TextBox txtPuestoF2;
-        private System.Windows.Forms.Button btnSiguienteF2;
         private System.Windows.Forms.RadioButton rbtnNoF2;
         private System.Windows.Forms.RadioButton rbtnSiF2;
         private System.Windows.Forms.Label label58;
@@ -2533,6 +2501,10 @@
         private System.Windows.Forms.TextBox txtSegundoAF2;
         private System.Windows.Forms.TabPage tabPage6;
         private System.Windows.Forms.Button sig;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button6;
     }
 }
 
