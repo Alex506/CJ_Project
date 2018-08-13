@@ -241,6 +241,11 @@ namespace Formulario
         {
 
         }
+
+        private void frmFormulario_Load(object sender, EventArgs e)
+        {
+            labelFecha1.Text = DateTime.Now.ToShortDateString();
+        }
     }
 }
 
