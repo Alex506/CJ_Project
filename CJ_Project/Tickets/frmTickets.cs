@@ -87,7 +87,7 @@ namespace Tickets
 
         private void dgvSolicitudes_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-           
+           //if(dgvSolicitudes.CellContentClick)
         }
     }
 }

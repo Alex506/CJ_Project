@@ -35,7 +35,6 @@
             this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSolicitudes)).BeginInit();
             this.SuspendLayout();
@@ -72,8 +71,7 @@
             this.dgvSolicitudes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Nombre,
             this.Column1,
-            this.Column2,
-            this.Column3});
+            this.Column2});
             this.dgvSolicitudes.Location = new System.Drawing.Point(12, 93);
             this.dgvSolicitudes.Name = "dgvSolicitudes";
             this.dgvSolicitudes.RowHeadersVisible = false;
@@ -95,11 +93,6 @@
             // 
             this.Column2.HeaderText = "Ver información completa";
             this.Column2.Name = "Column2";
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Respuesta";
-            this.Column3.Name = "Column3";
             // 
             // frmTickets
             // 
@@ -128,7 +121,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewButtonColumn Column2;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn Column3;
     }
 }
 
