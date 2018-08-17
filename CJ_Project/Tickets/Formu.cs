@@ -9,6 +9,7 @@ namespace Formulario
     class Formu
     {
         //Atributos de informacion general
+        public string Cedula { get; set; }
         public string NombreCompleto { get; set; }
         public string PrimerApellido { get; set; }
         public string SegundoApellido { get; set; }

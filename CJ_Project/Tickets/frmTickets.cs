@@ -89,12 +89,9 @@ namespace Tickets
             if(e.ColumnIndex == 3)
             {
                 numCliente = e.RowIndex;
-                MessageBox.Show(numCliente.ToString());
+                MessageBox.Show(lista[numCliente]);
 
-            }
-            
-
-            
+            }                   
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)

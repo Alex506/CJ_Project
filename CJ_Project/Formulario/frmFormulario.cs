@@ -296,7 +296,7 @@ namespace Formulario
                 //}
                 return json;
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 return "Error";
             }
