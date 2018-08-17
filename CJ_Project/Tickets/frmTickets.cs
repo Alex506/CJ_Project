@@ -3,19 +3,16 @@ using Formulario;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Tickets
 {
     public partial class frmTickets : Form
     {
+        MailInfo[] infos;
+        int contador = 0;
+        List<String> lista = new List<String>();
         public frmTickets()
         {
             InitializeComponent();
@@ -44,9 +41,8 @@ namespace Tickets
             try
             {
                 string json;
-                int contador = 0;
                 oClient.Connect(oServer);
-                MailInfo[] infos = oClient.GetMailInfos();
+                infos = oClient.GetMailInfos();
                 for (int i = 0; i < infos.Length; i++)
                 {
                     MailInfo info = infos[i];
@@ -57,9 +53,10 @@ namespace Tickets
                         json = oMail.TextBody;
                         Formu jsonObj = new Formu();
                         jsonObj = JsonConvert.DeserializeObject<Formu>(json);
-                        dgvSolicitudes.Rows[dgvSolicitudes.Rows.Add()].Cells[0].Value = jsonObj.NombreCompleto;
-                        dgvSolicitudes.Rows[contador].Cells[1].Value = oMail.ReceivedDate.ToShortDateString();
-                        dgvSolicitudes.Rows[contador].Cells[3].Value = false;                        
+                        dgvSolicitudes.Rows[dgvSolicitudes.Rows.Add()].Cells[0].Value = (contador + 1).ToString(); 
+                        dgvSolicitudes.Rows[contador].Cells[1].Value = jsonObj.NombreCompleto;
+                        dgvSolicitudes.Rows[contador].Cells[2].Value = oMail.ReceivedDate.ToShortDateString();
+                        lista.Add(json);
                         contador++;
                     }
                     
@@ -87,7 +84,22 @@ namespace Tickets
 
         private void dgvSolicitudes_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-           //if(dgvSolicitudes.CellContentClick)
+            var numCliente=0;
+            
+            if(e.ColumnIndex == 3)
+            {
+                numCliente = e.RowIndex;
+                MessageBox.Show(numCliente.ToString());
+
+            }
+            
+
+            
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

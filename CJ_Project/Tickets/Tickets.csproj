@@ -52,6 +52,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Formu.cs" />
+    <Compile Include="frmFormulario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFormulario.Designer.cs">
+      <DependentUpon>frmFormulario.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmTickets.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -60,6 +66,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmFormulario.resx">
+      <DependentUpon>frmFormulario.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmTickets.resx">
       <DependentUpon>frmTickets.cs</DependentUpon>
     </EmbeddedResource>

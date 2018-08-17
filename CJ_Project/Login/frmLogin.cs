@@ -29,7 +29,7 @@ namespace Login
         private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            frmFormulario t = new frmFormulario();
+            Formulario.Formulario t = new Formulario.Formulario();
             t.ShowDialog();
             this.Close();
         }
