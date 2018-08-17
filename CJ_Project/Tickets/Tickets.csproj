@@ -52,12 +52,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Formu.cs" />
-    <Compile Include="frmFormulario.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmFormulario.Designer.cs">
-      <DependentUpon>frmFormulario.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmTickets.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,9 +60,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="frmFormulario.resx">
-      <DependentUpon>frmFormulario.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frmTickets.resx">
       <DependentUpon>frmTickets.cs</DependentUpon>
     </EmbeddedResource>
@@ -98,6 +89,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\progress-arrows.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Formulario\Formulario.csproj">
+      <Project>{6046447e-228c-4257-a313-325f3286adfe}</Project>
+      <Name>Formulario</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

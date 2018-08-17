@@ -5,7 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Windows.Forms;
-
+using Formulario;
 namespace Tickets
 {
     public partial class frmTickets : Form
